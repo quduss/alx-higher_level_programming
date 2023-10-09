@@ -31,14 +31,14 @@ listint_t *insert_node(listint_t **head, int number)
 	ptr = *head;
 	while (ptr)
 	{
-		if (ptr->next->n >= number)
+		if (ptr->next == NULL)
 		{
-			new_node->next = ptr->next;
 			ptr->next = new_node;
 			return (new_node);
 		}
-		if (ptr->next == NULL)
+		if (ptr->next->n >= number)
 		{
+			new_node->next = ptr->next;
 			ptr->next = new_node;
 			return (new_node);
 		}
