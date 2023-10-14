@@ -55,8 +55,6 @@ int is_palindrome(listint_t **head)
 	listint_t *mid_node = NULL, *prev_of_slow_ptr, *second_half;
 	int result;
 
-	if (*head == NULL)
-		return (1);
 	if (*head != NULL && (*head)->next != NULL)
 	{
 		while (fast_ptr != NULL && fast_ptr->next != NULL)
@@ -84,5 +82,5 @@ int is_palindrome(listint_t **head)
 			prev_of_slow_ptr->next = second_half;
 		return (result);
 	}
-	return (0);
+	return (1);
 }
