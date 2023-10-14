@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * compareLists - compares the data of the first half and second half of the list
+ * compareLists - compares the data of each node in first half
+ * with each node in second half of the list
  * @head_1: first half of linked list
  * @head_2: second half of linked list
  * Return: 0 if it is not palindrome, 1 if it is palindrome
@@ -31,6 +32,7 @@ int compareLists(listint_t *head_1, listint_t *head_2)
 void reverse(listint_t **head_ref)
 {
 	listint_t *current = *head_ref, *next, *prev = NULL;
+
 	while (current != NULL)
 	{
 		next = current->next;
@@ -49,7 +51,8 @@ void reverse(listint_t **head_ref)
 
 int is_palindrome(listint_t **head)
 {
-	listint_t *fast_ptr = *head, *slow_ptr = *head, *mid_node = NULL, *prev_of_slow_ptr, *second_half;
+	listint_t *fast_ptr = *head, *slow_ptr = *head;
+	listint_t *mid_node = NULL, *prev_of_slow_ptr, *second_half;
 	int result;
 
 	if (*head == NULL)
