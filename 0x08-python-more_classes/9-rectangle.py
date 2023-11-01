@@ -104,6 +104,7 @@ class Rectangle:
     def square(cls, size=0):
         """creates new instance with same width and height as size
         Args:
+            cls: class object
             size: width and height of new instance
         Returns:
             new instance
