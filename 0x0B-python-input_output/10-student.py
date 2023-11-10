@@ -21,13 +21,11 @@ class Student:
             dictionary of only the attributes in the list otherwise
             all attributes are returned
         """
-        if not (type(attrs) is list and len(attrs) > 0):
+        if not (type(attrs) is list):
             return self.__dict__
         new_dict = {}
         real_dict = self.__dict__
         for i in attrs:
             if i in real_dict:
                 new_dict[i] = real_dict[i]
-        if len(new_dict) > 0:
-            return new_dict
-        return real_dict
+        return new_dict
