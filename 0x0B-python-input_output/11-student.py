@@ -37,4 +37,5 @@ class Student:
             json: dictionary representation of
             reference instance
         """
-        self.__dict__ = json
+        if len(json) > 0:
+            self.__dict__ = json
