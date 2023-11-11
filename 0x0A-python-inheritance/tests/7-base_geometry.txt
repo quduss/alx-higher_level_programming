@@ -40,3 +40,7 @@ TypeError: name must be an integer
 Traceback (most recent call last):
     ...
 TypeError: name must be an integer
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
