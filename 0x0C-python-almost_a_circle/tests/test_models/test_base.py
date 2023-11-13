@@ -1,9 +1,10 @@
 import unittest
 from models.base import Base
 
-class BaseCreate(unittest.TestCase):
-
+class TestRectangle(unittest.TestCase):
+    """testing rectangle"""
     def test_init(self):
+        """testing instantiation"""
         b1 = Base()
         self.assertEqual(b1.id, 1)
         b2 = Base(1)
@@ -16,6 +17,8 @@ class BaseCreate(unittest.TestCase):
         self.assertEqual(b5.id, 2)
         b6 = Base()
         self.assertEqual(b6.id, 3)
+        b6.id = 4
+        self.assertEqual(b6.id, 4)
     def test_isBase(self):
         b7 = Base()
         self.assertTrue(type(b7) is Base)
