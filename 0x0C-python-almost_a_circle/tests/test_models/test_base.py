@@ -1,5 +1,7 @@
+#!/usr/bin/python3
 import unittest
 from models.base import Base
+"""Test for Rectangle class"""
 
 
 class TestRectangle(unittest.TestCase):
@@ -23,5 +25,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(b6.id, 4)
 
     def test_isBase(self):
+        """testing instance to be of Base type"""
         b7 = Base()
         self.assertTrue(type(b7) is Base)
