@@ -79,3 +79,12 @@ class Rectangle(Base):
             for j in range(self.width):
                 print("#", end='')
             print()
+
+    def __str__(self):
+        """string representation of instance"""
+        id = self.id
+        x = self.x
+        y = self.y
+        width = self.width
+        height = self.height
+        return "[Rectangle] {} {}/{} - {}/{}".format(id, x, y, width, height)
