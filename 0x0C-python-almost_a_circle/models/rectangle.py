@@ -92,3 +92,14 @@ class Rectangle(Base):
         width = self.width
         height = self.height
         return "[Rectangle] ({}) {}/{} - {}/{}".format(id, x, y, width, height)
+
+    def update(self, *args):
+        """updating attributes with args"""
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            return
