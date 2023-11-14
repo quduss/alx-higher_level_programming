@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""Test for Rectangle class"""
 import unittest
 from models.base import Base
-"""Test for Rectangle class"""
 
 
 class TestRectangle(unittest.TestCase):
