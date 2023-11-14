@@ -75,7 +75,11 @@ class Rectangle(Base):
 
     def display(self):
         """display self with hashes to stdout"""
+        for h in range(self.y):
+            print()
         for i in range(self.height):
+            for w in range(self.x):
+                print(" ", end='')
             for j in range(self.width):
                 print("#", end='')
             print()
