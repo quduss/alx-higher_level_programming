@@ -87,4 +87,4 @@ class Rectangle(Base):
         y = self.y
         width = self.width
         height = self.height
-        return "[Rectangle] {} {}/{} - {}/{}".format(id, x, y, width, height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(id, x, y, width, height)
