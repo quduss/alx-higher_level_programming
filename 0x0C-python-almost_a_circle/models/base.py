@@ -50,7 +50,7 @@ class Base:
             r = cls(2, 3)
             r.update(**dictionary)
             return r
-        elif cls.__name == "Square":
+        elif cls.__name__ == "Square":
             s = cls(2)
             s.update(**dictionary)
             return s
