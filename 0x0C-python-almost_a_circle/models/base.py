@@ -34,3 +34,10 @@ class Base:
         name = cls.__name__
         with open("{}.json".format(name), 'w', encoding='utf-8') as file:
             file.write(string)
+
+    def from_json_string(json_string):
+        """return python object from its json string representation"""
+        if json_string is None or len(json_string) == 0:
+            return []
+        import json
+        return json.loads(json_string)
