@@ -41,3 +41,16 @@ class Base:
             return []
         import json
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Creates a new instance and set the attributes with the values
+        in the **dictionary"""
+        if cls.__name__ == "Rectangle":
+            r = cls(2, 3)
+            r.update(**dictionary)
+            return r
+        elif cls.__name == "Square":
+            s = cls(2)
+            s.update(**dictionary)
+            return s
