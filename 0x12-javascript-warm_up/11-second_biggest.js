@@ -6,7 +6,7 @@ if (arrLength < 4) {
   console.log(0);
 } else {
   const arr = [];
-  for (let i = 2; i < arrLength - 1; i++) {
+  for (let i = 2; i < arrLength; i++) {
     arr[i - 2] = parseInt(process.argv[i]);
   }
   arr.sort();
