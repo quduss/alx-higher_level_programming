@@ -8,9 +8,9 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("""SELECT * FROM states WHERE name LIKE
-                'N%' AND id <= 5 ORDER BY id""")
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
+                BINARY 'N%' ORDER BY id""")
+    rws = cur.fetchall()
+    for rw in rws:
+        print(rw)
     cur.close()
     db.close()
