@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""sends a request to the url provided and handle HTTPError 
+"""sends a request to the url provided and handle HTTPError
 using requests package"""
 
 
