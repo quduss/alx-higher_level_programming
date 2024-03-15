@@ -15,4 +15,4 @@ This directory tests further on the following:
 7. **6-rectangle.py** - Updates `Rectangle` class with public class attribute `number_of_instances` that returns the number of instances that exists.
 8. **7-rectangle.py** - Updates `Rectangle` class with public class attribute `print_symbol`. The value of `print_symbol` defaults to the `#` symbol and can be changed to any type. It is used to print the rectangle instance.
 9. **8-rectangle.py** - Updates `Rectangle` class with static method `bigger_or_equal` that returns the bigger rectangle between two rectangles based on area.
-10. **9-rectangle.py** - 
+10. **9-rectangle.py** - Updates `Rectangle` class with class method `square` that returns a new rectangle instance with equal width and height.
