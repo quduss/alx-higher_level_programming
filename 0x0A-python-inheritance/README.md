@@ -11,4 +11,6 @@ This directory tests understanding of inheritance in `Python`.
 9. **7-base_geometry.py** - Update `BaseGeometry` with public instance method `integer_validator` that validates if the value passed is an integer and greater than 0.
 10. **tests/7-base_geometry.txt** - doctests for the `integer_validator` method.
 11. **8-rectangle.py** - Defines `Rectangle` class that inherits from `BaseGeometry`. It instantiates private attributes `width` and `height` with width and height variables. It validates width and height with `integer_validator`.
-12. **9-rectangle.py** - Updates `Rectangle` class by implementing the `area` method. It also defines `__str__` to give rectangle objects of `[Rectangle] <width>/<height>`
+12. **9-rectangle.py** - Updates `Rectangle` class by implementing the `area` method. It also defines `__str__` to give rectangle objects of `[Rectangle] <width>/<height>`.
+13. **10-square.py** - Defines class `Square` that inherits from `Rectangle`. It instantiates with private instance attribute `size`. The size is validated with `integer_validator`. `Area` method is also implemented.
+14. **11-square.py** - Updates `Square` class by defining `__str__` to give square description `[Square] <width>/<height>`.
