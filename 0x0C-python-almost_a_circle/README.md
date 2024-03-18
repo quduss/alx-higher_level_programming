@@ -25,5 +25,6 @@ This Project tests understanding of the following:
 10. **models/square.py** - Defines class `Square` that inherits from `Rectangle`.
 11. **models/square.py** - Update the class `Square` by adding the public getter and setter `size` to update and retrieve the size of the square.
 12. **models/square.py** - Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes of the instance with the values in `args` or `kwargs`.
-13. **models/rectangle.py** - Update the class `Rectangle` by adding the public method `def to_dictionary(self)` that returns the dictionary representation of a Rectangle instance.
-14. ****
+13. **models/rectangle.py** - Update the class `Rectangle` by adding the public method `def to_dictionary(self)` that returns the dictionary representation of a `Rectangle` instance.
+14. **models/square.py** - Update the class `Square` by adding the public method `def to_dictionary(self)` that returns the dictionary representation of a `Square` instance.
+15. ****
