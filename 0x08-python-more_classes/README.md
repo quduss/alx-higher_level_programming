@@ -4,7 +4,7 @@ This directory tests further on the following:
 - objects and classes.
 - Attributes and Property
 - public, protected, and private attribute
-- magic methods like __repr__ and __str__
+- magic methods like `__repr__` and `__str__`
 - class methods and static methods
 1. **0-rectangle.py** - an empty class `Rectangle` that defines a rectangle.
 2. **1-rectangle.py** - Updates `Rectangle` class with private instance attributes width and height. It also includes property and setter for the width and height private attributes.
